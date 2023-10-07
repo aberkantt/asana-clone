@@ -1,0 +1,11 @@
+version: '4.19'
+services:
+  mongodb:
+    image: mongo:latest
+    restart: always
+    ports : 
+    - 27017:27017
+    volumes:
+      - data:/data/db
+volumes:
+  data:
